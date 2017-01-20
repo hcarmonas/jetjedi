@@ -1,0 +1,35 @@
+<div class="modal-header">
+	<h3 class="modal-title" id="modal-title">Jedi</h3>
+</div>
+<div class="modal-body" id="modal-body">
+	<form>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="form-group">
+					<label for="nome">Nome</label>
+					<input type="text" class="form-control" id="nome" name="nome" ng-model="jediAddCtrl.jediObj.name" placeholder="Digite o seu nome">
+				</div>
+				<div class="form-group">
+					<label for="planet">Planeta</label>
+					<input type="text" class="form-control" id="planet" name="planet" ng-model="jediAddCtrl.jediObj.planet" placeholder="Digite o seu planeta">
+				</div>
+				<div class="form-group">
+					<label for="mestre">Mestre</label>
+					<input type="text" class="form-control" id="mestre" name="mestre" ng-model="jediAddCtrl.jediObj.master" placeholder="Digite o seu mestre">
+				</div>
+				<div class="form-group">
+                    <label for="status">Status</label>    
+                    <select class="form-control"
+                            name="status" id="status"
+                            ng-model="jediAddCtrl.jediObj.status"
+                            ng-options="status.id as status.status_name for status in ::jediAddCtrl.status">
+                    </select>                
+                </div>
+			</div>
+		</div>
+	</form>
+</div>
+<div class="modal-footer">
+	<button class="btn btn-primary" type="button" ng-click="jediAddCtrl.save()">Salvar</button>
+	<button class="btn btn-warning" type="button" ng-click="jediAddCtrl.close()">Cancelar</button>
+</div>

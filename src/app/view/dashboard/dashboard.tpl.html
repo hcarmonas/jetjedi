@@ -1,0 +1,34 @@
+<div class="container-fluid" ng-controller="dashboardController as dashCtrl">
+	<div class="row">
+		<div class="col-lg-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">Jedi por Status</div>
+				<div class="panel-body">
+					<canvas id="pie" 
+					class="chart chart-pie"
+					width="900" 
+					height="400"
+					chart-data="dashCtrl.dataStatus" 
+					chart-labels="dashCtrl.labelsStatus" 
+					chart-options="dashCtrl.optionsStatus">
+				</canvas>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">Jedi por Planeta</div>
+					<div class="panel-body">
+						<canvas id="pie" 
+						class="chart chart-pie" 
+						width="900" 
+						height="400"
+						chart-data="dashCtrl.dataPlanet" 
+						chart-labels="dashCtrl.labelsPlanet" 
+						chart-options="dashCtrl.optionsPlanet">
+						</canvas> 
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

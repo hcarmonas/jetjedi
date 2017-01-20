@@ -1,0 +1,85 @@
+.grid-jedi-container {
+		background-color: #FFFFFF;
+		padding: 0px 130px;
+	}
+
+	.grid-jedi-container tbody {
+		display: block;
+		height: 400px;
+		overflow: hidden;
+
+	}
+
+	.grid-jedi-container table, tr, td, th, tbody, thead {
+		box-sizing: inherit !important;
+	}
+
+	.grid-jedi-container tbody:hover {
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+
+	.grid-jedi-container tbody:hover .trClass {
+		padding-right: 0px;
+	}
+
+	.grid-jedi-container thead,
+	.grid-jedi-container tbody tr {
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+		padding-right: 17px;
+	}
+
+	.grid-jedi-container .table > thead > tr > th {
+		border-bottom: 0px;
+	}
+
+	.grid-jedi-container tbody > tr > th,
+	.grid-jedi-container tbody > tr > td {
+		border-top: 0px;
+	}
+
+	.grid-jedi-container thead {
+		width: 100%;
+		background: #f1f4f9 linear-gradient(#fff 0, #f1f4f9 100%);
+		border: 1px solid #c9d3dd;
+		font-weight: bold;
+	}
+
+	.grid-jedi-container .good {
+		color: green;
+	}
+
+	.grid-jedi-container .bad {
+		color: red;
+	}
+
+	.grid-jedi-container .selected {
+		background-color: #e6e9ee !important;
+	}
+
+	.grid-jedi-container .selectVariation{
+		width: 200px;
+	}
+
+	.grid-jedi-container .hoverRow{
+		background-color: #FFFFFF;
+		border-bottom: 1px solid #c9d3dd;
+	}
+
+	.grid-jedi-container .hoverRow:hover{
+		background-color: #f3f4f7;
+	}
+
+	.grid-jedi-container .margin-select{
+		margin: 8px;
+	}
+
+	.grid-jedi-container .border-select{
+		border-top: 2px solid #ddd;
+	}
+
+	.margin{
+		margin-bottom: 10px;
+	}

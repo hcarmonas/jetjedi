@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>JetJedi</title>
+	<link rel="stylesheet" type="text/css" href="src/assets/main.css" />
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+
+	<script type="application/javascript" src="bower_components/angular/angular.js"></script>
+	<script type="application/javascript" src="bower_components/angular-route/angular-route.js"></script>
+	<script type="application/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="application/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="application/javascript" src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+	<script type="application/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+	<script type="application/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
+	<script type="application/javascript" src="bower_components/angular-touch/angular-touch.js"></script>
+	<script type="application/javascript" src="node_modules/chart.js/dist/Chart.min.js"></script>
+	<script type="application/javascript" src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>	
+	<script src="//cdn.backand.net/backand/dist/1.8.11/backand.min.js"></script>
+	<script type="application/javascript" src="src/app/app.js"></script>
+	<script type="application/javascript" src="route.js"></script>
+
+
+	<script type="application/javascript" src="src/app/view/dashboard/dashboard.controller.js"></script>		
+	<script type="application/javascript" src="src/app/view/dashboard/dashboard.service.js"></script>		
+
+	<script type="application/javascript" src="src/app/view/jedi/listJedi/jediList.controller.js"></script>
+	<script type="application/javascript" src="src/app/view/jedi/listJedi/jediList.service.js"></script>
+
+	<script type="application/javascript" src="src/app/view/jedi/cadJedi/jediAdd.controller.js"></script>		
+	<script type="application/javascript" src="src/app/view/jedi/cadJedi/jediAdd.service.js"></script>	
+
+	<script type="application/javascript" src="src/app/view/jedi/deleteJedi/jedidelete.controller.js"></script>		
+
+	<script type="application/javascript" src="src/app/directives/menu/menuDirective.js"></script>	
+
+
+</head>
+<body>
+	<div menu-directive></div>
+	<div ng-view></div>
+</body>
+</html>
